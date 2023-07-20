@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Calcagni Gabriel">
+    <meta property="og:title" content="NeoTecs Tutoriales">
+    <meta property="og:description" content="Los tutoriales de NeoTecs están diseñados para ayudar a las personas a configurar correctamente sus antenas inalámbricas y lograr la mejor calidad de señal posible.">
+    <meta property="og:url" content="https://solidsnk86.github.io/neotecs/index.html">
+    <meta property="og:image" content="img/Resize_20230401_215827_7086.jpg">
+    <meta name="google-site-verification" content="B_8uiFikk4mMtkPKHvNIlg3PyqQqHjGvpvVg5-WKU4w" />
+    <title>NeoTecs</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="icon" type="image/x-icon" href="img/wifi.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5476779571564408"
+     crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo" id="#top">
+                <span>NeoTecs<br><span class="color-acento">Tutotriales</span></span>
+            </div>
+            <button id="menuBtn"><i id="menuBtnIcon" class="fa-solid fa-bars"></i></button>
+            <button id="menuBtnClose">❌</button>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ACERCA</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+        <div class="redes">
+          <div id="container">
+            <div class="search-box">
+              <input class="search-form-input" type="search" name="search" placeholder="Buscar..." id="searchInput">
+              <details id="dropdown" class="dropdown">
+                <summary class="dropdown-button">
+                  <span id="selected-item" class="selected-item">Todo</span>
+                </summary>
+                <details-menu class="dropdown-menu">
+                  <div class="dropdown-menu-header">Marca de la antena</div>
+                  <div class="dropdown-menu-list">
+                    <label class="dropdown-menu-item">
+                      <input type="radio" name="item" value="Todas" checked>
+                      <span>Todas</span>
+                    </label>
+                    <label class="dropdown-menu-item">
+                      <input type="radio" name="item" value="Tp-link">
+                      <span>TP-LINK</span>
+                    </label>
+                    <label class="dropdown-menu-item">
+                      <input type="radio" name="item" value="Ubiquiti">
+                      <span>UBIQUITI</span>
+                    </label>
+                    <label class="dropdown-menu-item">
+                      <input type="radio" name="item" value="Mikrotik">
+                      <span>MIKROTIK</span>
+                    </label>
+                  </div>
+                </details-menu>
+              </details>
+            </div>
+          </div> 
+              <hr>
+        <button title="Facebook" onclick="compartirFacebook()"><i id="facebook" class="fa-brands fa-facebook-f"></i></button>
+        <button title="Twitter" onclick="compartirTwitter()"><i id="twitter" class="fa-brands fa-twitter"></i></button>
+        <button title="Whatsapp" onclick="compartirWhatsapp()"><i id="whatsapp" class="fa-brands fa-whatsapp"></i></button>
+        <button title="Linked In" onclick="compartirLinkedIn()"><i id="linkedin" class="fa-brands fa-linkedin"></i></button>
+        </div>
+          </nav>
+        </header>
+    </div>
+    
+
+        <!-- Hero -->
+    <section id="hero">
+        <h1>Bienvenidos a<br>NeoTecs Tutoriales</h1>
+        <form action="aprende.html">
+            <br>
+        <button id="water-button">Ver Configuraciones</button>
+    </form>
+    </section>
+
+    <section id="content-container">
+        <div class="container">
+        <center>
+        <h2 class="scroll-animation">NeoTecs Informática</h2>
+        <p>
+           Los tutoriales de NeoTecs están diseñados para ayudar a las personas a configurar correctamente sus antenas inalámbricas y lograr la mejor calidad de señal posible. Estos tutoriales proporcionan información detallada y práctica sobre la selección de antenas, la ubicación y la orientación, así como la configuración de software y hardware para una transmisión de señal inalámbrica óptima. Con los tutoriales de NeoTecs, los usuarios pueden obtener una guía paso a paso sobre cómo mejorar su conectividad inalámbrica y lograr una experiencia de red más fluida y eficiente.
+        </p>
+        </center>
+    </div>
+    </section>
+    
+    
+      <section class="videos-yt" id="#videos">
+        <h2>Videos de configuración</h2>
+        <li>✅ Rápido</li>
+        <li>✅ Fácil</li>
+        <li>✅ Práctico</li>
+        <div class="tutoyoutube">
+          <div class="video1">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/brN50pXmZR8" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+            <h3>Tp-Link</h3>
+            <hr>
+            <p>Configuración de antena Tp-Link CPE 510 de 5Ghz desde smartphone. Configuración de puertos desde el router, fácil y práctico.</p>
+          </div>
+          <div class="video2">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/BRCsYxWUvpU" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+            <h3>Tp-Link</h3>
+            <hr>
+            <p>Configuración antena Tp.Link CPE 510 de 5 Ghz desde una PC. Configuración de puertos desde el panel de control de Windows.</p>
+          </div>
+          <div class="video3">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Q9bFZgllF7k" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+            <h3>Ubiquiti</h3>
+            <hr>
+            <p>Configuración de antena Ubiquiti modelo Air Grid M2 HP de 2.4 Ghz desde smartphone, modo estación router. Guía rápida y fácil!</p>
+          </div>
+        </div>
+    </section>
+    
+    <section class="programas-pc" id="windows11">
+      <div class="container-programas-pc">
+      <h1>Información sobre Windows 10 y<br>programas de <br>formateo</h1>
+      <div class="pc-card">  
+      <h2>Windows 11</h2>
+      <p>
+        Windows 11 es último un sistema operativo de Microsoft y ofrece muchas características y mejoras en comparación con sus versiones anteriores, última versión. Puedes descargarlo desde el siguiente enlace:
+        <br>
+      </p>
+      <a id="ir" href="https://www.microsoft.com/es-es/windows/windows-11" target="_blank">Windows <i class="fa-solid fa-download"></i></a>
+      </div>
+      <div class="pc-card">
+      <h2>Rufus</h2>
+      <p>
+        Rufus es una herramienta popular para crear unidades USB de arranque, lo cual puede ser útil para formatear la PC e instalar un sistema operativo. Puedes descargar Rufus desde su sitio web oficial:
+        <br>
+      </p>
+      <a id="ir" href="programs-data/rufus-3.22.exe" target="_blank">Rufus <i class="fa-solid fa-download"></i></a>
+      </div>
+      <div class="otros-pc">
+      <h2>Otros programas de formateo</h2>
+      <p>
+        Aquí hay algunos otros programas recomendados para formatear la PC:
+      </p>
+      <ul>        
+        <li>
+          <a href="https://www.easeus.com/partition-manager/" target="_blank">EaseUS Partition Master</a>
+        </li>
+        <li>
+          <a href="https://www.partitionwizard.com/" target="_blank">MiniTool Partition Wizard</a>
+        </li>
+          <li>
+          <a href="https://www.acronis.com/en-us/personal/computer-backup/" target="_blank">Acronis True Image</a>
+        </li>
+        </ul>
+      </div>
+      
+      <h2>Otras herramientas útiles</h2>
+      <p>
+        Además de los programas mencionados anteriormente, aquí tienes algunas otras herramientas útiles para el formateo de la PC:
+      </p>
+      <ul>
+        <li>
+          <strong>CCleaner:</strong> Un software para limpiar y optimizar el sistema operativo. Puedes encontrar más información y descargarlo desde su sitio web oficial:
+        </li>
+        <a href="https://www.ccleaner.com/" target="_blank"><br>https://www.ccleaner.com/</a>
+        <li>
+          <strong>Malwarebytes:</strong> Una herramienta de seguridad para detectar y eliminar malware. Puedes obtener más información y descargarlo desde su sitio web oficial:
+        </li>
+        <a href="https://www.malwarebytes.com/" target="_blank"><br>https://www.malwarebytes.com/</a>
+        <li>
+          <strong>CrystalDiskInfo:</strong> Una utilidad para monitorear la salud de los discos duros y SSD. Puedes obtener más información y descargarlo desde su sitio web oficial:
+        </li>
+        <a href="https://crystalmark.info/en/software/crystaldiskinfo" target="_blank"><br>https://crystalmark.info/</a>
+      </ul>
+      </div>
+    </div>
+    <section class="educacion">
+      <h2>Otras utilidades</h2>
+      <button id="despliegue-2"><i id="chevron-2" class="fa-solid fa-chevron-down"></i></button>
+      <div class="demos-2">
+        <ul>
+          <li>
+            <h4 id="windows10">Descarga de Windows 10</h4>
+            <p></p>
+            <li>
+              <p>
+                Puedes descargar Windows 10 desde el siguiente enlace:
+              </p>
+              <a href="https://www.microsoft.com/es-es/software-download/windows10" target="_blank">Descargar Windows 10 <i class="fa-solid fa-download"></i></a>
+            </li>
+         
+          <li>
+            <hr>
+            <h4>Descarga de Windows 7 (32 y 64 bits)</h4>
+            <p></p>
+            <li>
+              <p>
+                Windows 7 es un sistema operativo muy popular y ampliamente utilizado. Si necesitas la versión de 32 bits o 64 bits de Windows 7, puedes descargarla desde los siguientes enlaces:
+              </p>
+              <a href="https://www.microsoft.com/es-es/software-download/windows7" target="_blank">Windows 7 (32 bits) <i class="fa-solid fa-download"></i></a>
+              <br>
+              <a href="https://www.microsoft.com/es-es/software-download/windows7" target="_blank">Windows 7 (64 bits) <i class="fa-solid fa-download"></i></a>
+              <br>
+            </li>
+        </ul>
+        <div class="config-container">
+        <div id="routerInterface">
+          <iframe src="http://192.168.0.254/" width="100%" height="100%" allow="origin"></iframe>
+        </div>
+      </div>
+      </div>
+      
+    </section>
+    </section>
+    
+    <!-- SECCION DESARROLLO WEB -->
+    
+    <center>
+    <section id="nuestros-equipos">
+      <div class="section">
+        <h2>Desarrollos Web</h2>
+        <div class="carousel-slides">
+          
+          <div class="equipo">
+            <div class="equipo-content">
+            <h3>GerArt85</h3>
+            <hr>
+            <p><strong>¿En busca de un excelente portfolio de dibujos?</strong></p>
+            <p>Chequea este sitio.</p>
+            <br>
+            <form action="https://solidsnk86.github.io/gerart85.github.io/">
+              <button id="ir">+ Info</button>
+            </form>
+          </div>
+          </div>
+    
+          <div class="equipo" id="webForm">
+            <h3>Web Form</h3>
+            <hr>
+            <p><strong>¿Necesitas facturar o presupuestar?</strong></p>
+            <p>Desarrollo de formularios personalizados.</p>
+            <br>
+            <form action="https://solidsnk86.github.io/formularioWeb/">
+              <button id="ir">+ Info</button>
+            </form>
+          </div>
+    
+          <div class="equipo">
+            <h3>CV Online</h3>
+            <hr>
+            <p><strong>Si buscas mejorar tus chances y oportunidades de empleo, aquí te ofrezco un portfolio online!</strong></p>
+            <p>Chequea este sitio.</p>
+            <br>
+            <form action="https://solidsnk86.github.io/CvOnline-modelo1/">
+              <button id="ir">+ Info</button>
+            </form>
+          </div>
+    
+          <div class="equipo" id="webForm">
+            <h3>Currículum Online</h3>
+            <hr>
+            <p><strong>Modelo de currículum online para compartir, imprimir y descargar en PDF.</strong></p>
+            <p>Desarrollo de Currículums personalizados.</p>
+            <br>
+            <form action="https://solidsnk86.github.io/CV_Calcagni_Gerardo/index.html">
+              <button id="ir">+ Info</button>
+            </form>
+          </div>
+        </div>
+       
+        <div class="carousel-dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <button id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+        <button id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </section>
+  </center>
+  
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion" id="content-container">
+        <h2>CONTACTO</h2>      
+        <div class="fila">
+            <!-- Formulario -->
+            <div class="col" id="#myForm">
+                <form id="miFormulario" action="enviar_formulario.php" method="POST">
+                    <input type="text" name="nombre" placeholder="Tú Nombre" required>
+                    <input type="text" name="telefono" placeholder="Número telefónico">
+                    <input type="email" name="correo" placeholder="Dirección de correo" required>
+                    <input type="text" name="tema" placeholder="Tema">
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <div class="container-button">
+                        <button id="submit" type="submit">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            ENVIAR MENSAJE
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- PUBLICIDAD -->
+        <div class="col">
+            <video onclick="showCard()" id="publi-burgerInc" src="img/publi-burgerInc.mp4" autoplay loop muted></video>
+        </div>
+    </div>
+</section>
+    
+        <!-- CHATBOT -->
+    <div id="chatbot-container">
+      <div class="logo"><i class="fa-solid fa-shield-dog"></i> NeoBot <span style="color:mediumslateblue">Chat</span></div>
+      <div id="chatlog"></div>
+      <input type="text" id="user-input" placeholder="Escribe tu mensaje..."><button id="chatButton" onclick="processUserInput()"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+    <div class="chat">
+      <img class="neoBot" src="img/robot.png" alt="chatbot" title="NeoBot-Chat">
+    </div>
+
+    <!-- C 👀 K I E S -->
+    <div id="cookie-message" class="cookie-message">
+      <p>Este sitio web utiliza cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestro uso de cookies.</p>
+      <button id="accept-cookies">Aceptar</button>
+      <button id="cookie-details">Ver detalles de cookies</button>
+    </div>
+
+        <!-- Footer -->
+ <footer>
+    <a href="#top" class="arriba">
+        <i class="fa-solid fa-caret-up"></i>
+    </a>
+    <br>
+ <div class="redes">
+        <p>Compartir esta web en redes sociales</p>
+        <button title="Facebook" onclick="compartirFacebook()"><i id="facebook" class="fa-brands fa-facebook-f"></i></button>
+        <button title="Twitter" onclick="compartirTwitter()"><i id="twitter" class="fa-brands fa-twitter"></i></button>
+        <button title="Whatsapp" onclick="compartirWhatsapp()"><i id="whatsapp" class="fa-brands fa-whatsapp"></i></button>
+        <button title="Linked In" onclick="compartirLinkedIn()"><i id="linkedin" class="fa-brands fa-linkedin"></i></button>
+        <button title="Dar ❤️"><a href="https://link.mercadopago.com.ar/neotecs"><i id="love" class="fa-solid fa-hand-holding-heart"></i></a></button>
+    </div>
+    <div class="secciones">
+            <a href="politica_condiciones.html" target="_blank" rel="noopener noreferrer" title="Políticas del Sitio">
+                <ul>
+                    <li class="color">Políticas y Condiciones de Uso</li>
+                </ul>
+            </a>
+            <a href="https://www.instagram.com/calcagni_gabriel26?ishid=ZDdkNTZiNTM=" title="Desarrollador">
+                <ul>
+                    <li>Made with 💜 by<span class="color-acento"> SolidSnk86</span></li>
+                </ul>
+            </a>
+        </div>
+       <p>Todos los derechos reservados &copy;Neotecs Informática 2023</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
