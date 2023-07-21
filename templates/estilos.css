@@ -347,7 +347,7 @@ a {
         rgba(0,0,0,0.2),
         rgba(0,0,0,0.1)
     ) 
-    ,url("img/background-gradient-hero.png");
+    ,url("/img/background-gradient-hero.png");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
