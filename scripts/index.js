@@ -98,7 +98,7 @@ searchInput.addEventListener('keydown', function(event) {
 
     // Realiza una redirección basada en el término de búsqueda
     if (lowercaseTerm === 'configuracion cpe 510') {
-      window.location.href = 'ap-router-cliente.html';
+      window.location.href = 'templates/ap-router-cliente.html';
     } else {
       window.location.href = 'aprende.html';
     }
