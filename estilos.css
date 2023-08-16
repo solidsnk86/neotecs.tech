@@ -459,7 +459,7 @@ a {
     width: 100%;
 }
 #SomosNeoTecs h2 {
-    margin: 30px;
+    margin-left: 20px;
 }
 #SomosNeoTecs h3 {
     margin: 30px
@@ -473,6 +473,8 @@ a {
     height: 4px;
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 10px;
+  margin-bottom: 10px;
 }
 #SomosNeoTecs li {
     text-align: left;
@@ -1161,7 +1163,8 @@ img[id="imgAP"] {
       flex-direction: column;
     }
 }
-  @media screen and (max-width: 700px) {
+
+@media screen and (max-width: 700px) {
         .images-web {
           margin: 0;
           width: 100%;
@@ -1173,6 +1176,18 @@ img[id="imgAP"] {
         #imgAP {
          width:100%;
          height:auto;
+  }
+}
+
+@media (min-width: 600px) {
+    .neoBot {
+      width: 55px;
+    }
+}
+
+@media (min-width: 400px) {
+  .neoBot {
+    width: 55px;
   }
 }
 
@@ -1782,8 +1797,6 @@ footer {
   text-align: left;
 }
 
-
-
 .container-card {
   background-color: rgba(0, 0, 0, 0.2);
   display: fixed;
@@ -1795,4 +1808,48 @@ footer {
   width: 300px;
   height: auto;
   box-shadow: 0 6px 9px #999;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  margin-left: 12px;
+}
+.breadcrumbs li {  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: #899bbd;
+  font-weight: 600;
+  display: flex;
+}
+
+@media (max-width: 400px) {
+  .breadcrumb {
+    font-size: 10px;
+  }
+}
+
+.breadcrumb a {
+  color: #899bbd;
+  transition: 0.3s;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb a:hover {
+  color: #51678f;
+}
+
+.breadcrumb .breadcrumb-item::before {
+  color: #899bbd;
+}
+
+.breadcrumb .active {
+  color: #51678f;
+  font-weight: 600;
 }
