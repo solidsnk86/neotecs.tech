@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Calcagni Gabriel">
+    <title>Modo AP Router Cliente</title>
+</head>
+<body>
+    <section id="SomosNeoTecs">
+           <h2>Configuración modo<br><span class="color-acento"> AP Router Cliente Tp-Link</span></h2>
+           <div class="breadcrumbs">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/neotecs.tech-master/index.html">Inico</a></li>
+              <li class="breadcrumb-item"><a href="/neotecs.tech-master/templates/aprende.html">/ Configuración Modos</a></li>
+              <li class="breadcrumb-item active">/ Ap Router Cliente</li>
+           </ol>
+           </div>
+           <hr>
+        <p>Guía de Configuración:</p>
+        <p>Este artículo aplica a los siguientes modelos:
+            <span class="color-acento"><strong> CPE510 , CPE610 , CPE220 , CPE210 , CPE520 , CPE605.</strong></span>
+        </p>
+        <hr>
+        <p>Para poder configurar el modo AP Router Cliente desde 0, vamos a ingresar desde una pc,
+            o desde un smartphone, a continuación voy a detallar los diferentes métodos para configurar la CPE.</p>
+    
+        <p>Configuración desde la PC:</p>
+        <p>Desde una PC con Sistema Operativo de Windows, nos dirigimos a panel de control, para acceder a él,
+            presionamos el botón WIN + R y escribimos: <strong>ncpa.cpl</strong>, le damos enter.
+            Veremos la siguiente ventana:</p>
+            <div class="images-web">
+                <img class="imgAP" src="/neotecs.tech-master/img/imagen-ap-router-propiedades-red.png" alt="panel de control-conexiones de red captura de pantalla">
+                </div>
+        <p>En Red o (Ethernet) hacemos clic derecho sobre el ícono, nos dirijimos a propiedades.
+            Dónde está la opción (Habilitar el protocolo de Internet versión 4 (TCP/IPv4)), hacemos doble-clic.
+            Seleccionamos en, usar la siguiente dirección IP:</p>
+            <div class="images-web">
+                <img class="imgAP" src="/neotecs.tech-master/img/imagen-ap-router-TCP-IP.png" alt="panel de control-conexiones de red captura de pantalla">
+                </div>
+        <p><strong>Dirección IP: 192.168.0.100 | Máscara de sub-red: 255.255.255.0</strong></p>
+   
+            <div class="images-web">
+            <img class="imgAP" src="/neotecs.tech-master/img/imagen-ap-router-propiedades-protocolo-IP.png" alt="imágen propiedades ethernet">
+            </div>
+        <p>Aceptamos los cambios. E ingresamos en el navegador web, en la url escribimos:<strong> 192.168.0.254</strong>
+            damos enter.</p>
+        <div class="images-web">
+            <img class="imgAP" src="/neotecs.tech-master/img/navegador.png" alt="imágen navegador 192.168.0.254">
+        </div>
+        <p>Continuamos a<strong> 192.168.0.254 (no seguro)</strong>.</p>
+        <p>Ingresamos (admin) en usuario y (admin) en contraseña, ambos por igual, seleccionamos nuestro país e idioma.
+            En caso que no escanee correctamente la señal del nodo. Utilizar<strong> (Test Mode)</strong> en selección de país.
+        </p>
+        <div class="images-web">
+            <img class="imgAP" src="/neotecs.tech-master/img/ApRouterCliente2.png" alt="captura de pantalla sistema pharos tp-link">
+        </div>
+        <p> En la siguiente parte creamos un usuario y contraseña que recordemos y accedemos al panel general de TP-LINK.</p>
+        <div class="images-web">
+            <img class="imgAP" src="/neotecs.tech-master/img/ApRouterCliente3.png" alt="captura de pantalla sistema pharos tp-link">
+        </div>
+        <p>Una vez dentro del menú principal de la interfaz de Pharos OS de TP-Link, seleccionamos en la pestaña (Modo de Operación),
+            y seleccionamos (AP Router Cliente). Nos va a aparecer si deseamos aceptar el cambio de modo, hacemos clic en (Si).
+        </p>
+        <div class="images-web">
+            <img class="imgAP" src="/neotecs.tech-master/img/ApRouterCliente4.png" alt="captura de pantalla sistema pharos tp-link">
+        </div>
+        <p>
+            En el modo Ap Router Cliente nos vamos a la pestaña (Inalámbrico), vamos al apartado de configuración de cliente inalámbrico.
+            Hacemos clic en Inspección.
+        </p>
+        <div class="images-web">
+            <img class="imgAP" src="/neotecs.tech-master/img/ApRouterCliente5.png" alt="captura de pantalla sistema pharos tp-link">
+        </div>
+        <p>
+            Esperamos que termine de escanear y seleccionamos el nodo del Gobierno, en éste caso la red WiFi gratis del gobierno de San Luis.
+            Tildamos la casilla a nuestra izquierda y hacemos clic en (Fijar al Punto de Acceso). Configuramos la distancia, en éste caso estamos
+            a 200 metros de la antena (2 cuadras aproximadamente), ponemos: 0.2. Aplicamos y guardamos.
+        </p>
+        <div class="images-web">
+            <img class="imgAP" src="/neotecs.tech-master/img/ApRouterCliente6.png" alt="captura de pantalla sistema pharos tp-link">
+        </div>
+        <p>Una vez hemos terminado los pasos, volvemos a la pestaña (Estado) y observamos los indicadores de señal/ruido/SNR y transmisión de antena a antena (CCQ). Con ésto hemos terminado la configuración y conectado a internet.</p>
+        <div class="images-web">
+            <img class="imgAP" src="/neotecs.tech-master/img/ApRouterCliente7.png" alt="captura de pantalla sistema pharos tp-link">
+        </div>
+          <p>Si has llegado hasta aquí, esperamos haberte ayudado con éste tutorial. No dudes en visitar nuestro canal en YouTube, acá te dejamos un breve tutorial para que hagas estos mismos pasos desde tu smartphone:</p>
+    </section>
+        
+        <section class="video-ap-router">
+            <div class="web-images">
+            <iframe src="https://www.youtube.com/embed/brN50pXmZR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+</body>
+</html>

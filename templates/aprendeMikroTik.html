@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Calcagni Gabriel">
+    <title>Configurar tu CPE</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+   <link rel="icon" type="image/x-icon" href="img/wifi.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- MENU ENCABEZADO -->
+
+  <div class="contenedor-header" id="menu-nav">
+    <header>
+      <div class="logo" id="#top">
+        <span>NeoTecs<br><span class="color-acento">Tutoriales</span></span>
+      </div>
+      <div id="dark-mode-toggle">
+        <span class="icon" id="dark-mode-icon"></span>
+      </div>
+      <button id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+      <button id="menuBtnClose">❌</button>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html#inicio" onclick="seleccionar()">INICIO</a></li>
+          <li><a href="index.html#sobremi" onclick="seleccionar()">ACERCA</a></li>
+          <li><a href="index.html#contacto" onclick="seleccionar()">CONTACTO</a></li>
+        </ul>
+        <div class="redes">
+          <div id="container">
+            <div class="search-box">
+              <input class="search-form-input" type="search" name="search" placeholder="Buscar..." id="searchInput">
+              <details id="dropdown" class="dropdown">
+                <summary class="dropdown-button">
+                  <span id="selected-item" class="selected-item">Todo</span>
+                </summary>
+                <details-menu class="dropdown-menu">
+                  <div class="dropdown-menu-header">Marca de la antena</div>
+                  <div class="dropdown-menu-list">
+                    <label class="dropdown-menu-item">
+                      <input type="radio" name="item" value="Todas" checked>
+                      <span>Todas</span>
+                    </label>
+                    <label class="dropdown-menu-item">
+                      <input type="radio" name="item" value="Tp-link">
+                      <span>TP-LINK</span>
+                    </label>
+                    <label class="dropdown-menu-item">
+                      <input type="radio" name="item" value="Ubiquiti">
+                      <span>UBIQUITI</span>
+                    </label>
+                    <label class="dropdown-menu-item">
+                      <input type="radio" name="item" value="Mikrotik">
+                      <span>MIKROTIK</span>
+                    </label>
+                  </div>
+                </details-menu>
+              </details>
+            </div>
+          </div> 
+          <hr>
+          <button title="Facebook" onclick="compartirFacebook()"><i id="facebook" class="fa-brands fa-facebook-f"></i></button>
+          <button title="Twitter" onclick="compartirTwitter()"><i id="twitter" class="fa-brands fa-twitter"></i></button>
+          <button title="Whatsapp" onclick="compartirWhatsapp()"><i id="whatsapp" class="fa-brands fa-whatsapp"></i></button>
+          <button title="Linked In" onclick="compartirLinkedIn()"><i id="linkedin" class="fa-brands fa-linkedin"></i></button>
+        </div>
+      </nav>
+    </header>
+  </div>
+    <!-- MODOS DE CONFIGURACION -->
+  
+    <section id="aprende">
+      <h2 id="tplink">Modos de Operación<br><span class="color-modos">MikroTik</span></h2>
+      <div class="modos">
+        <div>
+          <a href="punto-acceso.html" class="link">PUNTO DE ACCESO</a>
+        </div>
+        <div>
+          <a href="repetidor.html" class="link">REPETIDOR</a>
+        </div>
+        <div>
+          <a href="cliente.html" class="link">CLIENTE</a>
+        </div>
+        <div>
+          <a href="ap-router-cliente.html" class="link">AP CLIENT ROUTER</a>
+        </div>
+        <div>
+          <a href="router.html" class="link">ROUTER</a>
+        </div>
+      </div>
+    </section>
+
+  <section id="SomosNeoTecs">
+          <p>En éste apartado vamos a aprender a configurar un CPE de la marca MikroTik ya sea de 5Ghz. o de 2,4Ghz. <span class="color-acento"> Selecciona un modo de operación para comenzar!</span></p>
+          <hr>
+    </section>
+
+    <div id="content-container"></div>
+
+    <script>
+
+      // Div fixed debajo del Nav
+
+var navMenu = document.querySelector('.contenedor-header');
+
+window.addEventListener('scroll', function() {
+  var content = document.querySelector('.modos');
+
+  if (window.pageYOffset > navMenu.offsetHeight) {
+    content.classList.add('fixed');
+  } else {
+    content.classList.remove('fixed');
+  }
+});
+
+      document.addEventListener('DOMContentLoaded', function() {
+ 
+        var links = document.querySelectorAll('.link');
+      
+        // Manejar el evento click para cada enlace
+        links.forEach(function(link) {
+          link.addEventListener('click', function(event) {
+            event.preventDefault();
+      
+            var url = this.getAttribute('href');
+            loadContent(url);
+          });
+        });
+      
+// Función para cargar el contenido de una URL en el contenedor
+        function loadContent(url) {
+          var container = document.getElementById('content-container');
+          container.innerHTML = 'Cargando...';
+      
+          // Realizar una solicitud AJAX para obtener el contenido de la URL
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', url, true);
+          xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+              container.innerHTML = xhr.responseText;
+            }
+          };
+          xhr.send();
+        }
+      });
+        // Obtener todos los elementos con la clase "link"
+        var links = document.getElementsByClassName('link');
+      
+        // Agregar evento de clic a cada enlace
+        Array.from(links).forEach(function(link) {
+          link.addEventListener('click', function(event) {
+            event.preventDefault(); // Evitar comportamiento predeterminado del enlace
+            
+            // Quitar la clase "selected" de todos los enlaces
+            Array.from(links).forEach(function(link) {
+              link.classList.remove('selected');
+            });
+      
+            // Agregar la clase "selected" al enlace clicado
+            this.classList.add('selected');
+          });
+        });
+
+        function fixRedes() {
+  var redes = document.querySelector(".redes");
+  var windowHeight = window.innerHeight;
+  redes.style.position = "fixed";
+  redes.style.bottom = 0;
+  redes.style.height = windowHeight;
+}
+
+window.addEventListener("scroll", fixRedes);
+
+    </script>
+
+     <div class="donaciones">
+        <p>Si te fué de utilidad éste sitio, espero que te haya gustado!</p>
+        <p>"Apoya nuestro sitio de tutoriales con una contribución"</p>
+        <button id="boton-donar" title="Donación MP"><a href="https://link.mercadopago.com.ar/neotecs">¡Tu contribución 😃!</a></button>
+    </div>  
+
+<!-- F O O T E R -->
+
+<footer>
+    <a href="#top" class="arriba">
+        <i class="fa-solid fa-caret-up"></i>
+    </a>
+        <a href="index.html" class="home">
+        <i class="fa-solid fa-home"></i> Volver al inicio
+    </a>
+    <br>
+    <br>
+ <div class="redes">
+        <p>Compartir esta web en redes sociales</p>
+        <button title="Facebook" onclick="compartirFacebook()"><i id="facebook" class="fa-brands fa-facebook-f"></i></button>
+        <button title="Twitter" onclick="compartirTwitter()"><i id="twitter" class="fa-brands fa-twitter"></i></button>
+        <button title="Whatsapp" onclick="compartirWhatsapp()"><i id="whatsapp" class="fa-brands fa-whatsapp"></i></button>
+        <button title="Linked In" onclick="compartirLinkedIn()"><i id="linkedin" class="fa-brands fa-linkedin"></i></button>
+        <button title="Dar ❤️"><a href="https://mpago.la/2LxVoxE"><i id="love" class="fa-solid fa-hand-holding-heart"></i></a></button>
+    </div>
+    <div class="secciones">
+            <a href="/politica_condiciones.html" target="_blank" rel="noopener noreferrer" title="Políticas del Sitio">
+                <ul>
+                    <li class="color">Políticas y Condiciones de Uso</li>
+                </ul>
+            </a>
+            <a href="https://www.instagram.com/calcagni_gabriel26?ishid=ZDdkNTZiNTM=" title="Desarrollador">
+                <ul>
+                    <li>Made with 💜 by<span class="color-acento"> SolidSnk86</span></li>
+                </ul>
+            </a>
+        </div>
+       <p>Todos los derechos reservados &copy;Neotecs Informática 2023</p>
+</footer>
+
+   <script src="index.js"></script>
+    
+</body>
+</html>
+
