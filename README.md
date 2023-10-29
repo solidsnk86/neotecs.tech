@@ -1,6 +1,6 @@
 ![Static Badge](https://img.shields.io/badge/NeoTecs-WEB-green)
 
-Este proyecto es una web de documentación para configurar CPEs de la marca de TP Link. Y está en proceso de desarrollo. Tiene implementado un Chatbot, con algunas instrucciones básicas para respuestas. También tiene una pequeña parte de back-end hecha en PHP, como respuestas para formulario de contacto, algunas cookies simples para guardar en tu base de datos SQL.
+Este proyecto es una web de documentación para configurar CPEs de la marca de TP Link. Y está en proceso de desarrollo. Tiene implementado un Chatbot, con algunas instrucciones básicas para respuestas. También tiene una pequeña parte de back-end hecha en PHP, como respuestas para formulario de contacto, algunas cookies simples.
 
 **🔧 Herramientas utilizadas:**
 
